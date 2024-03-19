@@ -608,7 +608,7 @@ ul {
   cursor: pointer;
   transform: translateY(0px);
 }
-.modal-doing {
+.modal-form {
   font-family: var(--text-font-family);
   font-weight: 500;
   font-size: 16px;
@@ -619,26 +619,75 @@ ul {
   padding: 72px 24px 0 24px; 
 }
 .modal-name {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
-  padding-right: 24px;
-  position: absolute;
+  margin-left: 24px;
 }
-.person {
-  position: relative;
-  padding: 3px 0px;
+.person,
+.phone,
+.email {
+  position: absolute;
   width: 18px;
   height: 24px;
+  top: 50%;
+  left: 16px;
 }
-.modal-name name {
-  font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16667;
-letter-spacing: 0.04em;
-color: #8e8f99;
+.modal-name,
+.modal-phone,
+.modal-email,
+.modal-comment,
+.policy {
+  font-family: var(--text-font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
+.modal-phone,
+.modal-email,
+.modal-comment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+span {
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 24px;
+}
+textarea {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  resize: none;
+}
+.modal-policy {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.policy {
+  margin-left: 8px;
+}
+.policy-box {
+  width: 16px;
+  height: 16px;
+  margin-left: 24px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+
   
 
 
